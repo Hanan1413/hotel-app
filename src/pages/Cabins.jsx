@@ -4,6 +4,7 @@ import Heading from "../ui/Heading";
 import Row from "../ui/Row";
 import { getCabins } from "../services/apiCabins";
 import CreateCabinForm from "../features/cabins/CreateCabinForm";
+import CabinTableOperations from "../ui/CabinTableOperations";
 
 function Cabins() {
   const [showForm, setShowForm]= useState(false);
@@ -14,7 +15,7 @@ function Cabins() {
     <>
     <Row type="horizontal">
       <Heading as="h1">All cabins</Heading>
-      <p>Filter </p>
+      <CabinTableOperations />
     </Row>
     <Row>
       <CabinTable />
